@@ -10,3 +10,100 @@ body{
     font-family: 'PT Sans', sans-serif;
 }
 
+ul{
+    list-style-type: none;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.mobile-padding{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/* MOBILE FIRST */
+
+/* HEADER */
+header{
+    height: 80px;
+    background-color: #0084fd;
+    color: white;
+}
+
+nav{
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.menu{
+    display: none;
+}
+
+/* MAIN */
+.demo{
+    padding-top: 2rem;
+    /* padding-bottom: 2rem; */
+}
+
+.intro-columns{
+    flex-wrap: wrap;
+}
+
+.intro-col{
+    width: 100%;
+    background-color: #b5ddff;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+/* TABLET */
+@media screen and (min-width:768px){
+    /* MAIN */
+    .intro-columns{
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+
+    .intro-col:first-child{
+        width: calc( (100% / 3 * 2) - 1rem);
+       
+    }
+
+    .intro-col{
+        
+        width: calc( 100% / 3 - 1rem);
+        padding: 0 1rem;
+        margin-left: 1rem;
+    }
+
+}
+
+
+
+
+
+
+
+/* DEKSTOP */
+@media screen and (min-width:992px) {
+    /* HEADER */
+    
+    .burger-bottom{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+
+    li{
+        padding: 10px;
+    }
+}
