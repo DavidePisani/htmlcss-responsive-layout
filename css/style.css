@@ -150,7 +150,40 @@ nav{
 .us p{
     margin-bottom: 40px;
 }
+/* fine About Us */
 
+/* inizio Get-start */
+.get-start{
+    padding-top: 35px;
+    padding-bottom: 20px;  
+}
+
+.start{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+/* fine Get-start */
+/* FINE MAIN */
+
+/* FOOTER */
+footer{
+    background-color: #333333;
+    padding-top: 35px;
+    padding-bottom: 20px; 
+    text-align: center;
+}
+
+.top-col{
+    width: 100%;
+    margin-bottom: 25px;
+   
+}
+
+.bottom-col{
+    font-size: 15px;
+}
 
 /*----------------------------------------
                     TABLET 
@@ -181,6 +214,7 @@ nav{
     .cont-benefit{
         justify-content: space-between;
     }
+
     .benefit{
         width:calc(100% / 2 - 10px) ;
     }
@@ -195,6 +229,7 @@ nav{
         width: 40%;
         margin-right: 1rem;
     }
+    /* FINE MAIN */
 }
 
 
@@ -235,9 +270,11 @@ nav{
     .cont-benefit{
         justify-content: space-between;
     }
+
     .benefit{
         width:calc(100% / 3 - 10px) ;
     }
     /* fine benefit */
-    
+
+    /* FINE MAIN */
 }
