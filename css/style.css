@@ -16,6 +16,7 @@ ul{
 
 .flex-container{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .mobile-padding{
@@ -28,7 +29,13 @@ ul{
     margin: 0 auto;
 }
 
-/* MOBILE FIRST */
+.purple{
+    background-color: #9792e4;
+}
+
+/*----------------------------------------
+                 MOBILE FIRST 
+------------------------------------------*/
 
 /* HEADER */
 header{
@@ -48,25 +55,106 @@ nav{
 }
 
 /* MAIN */
+/* sezione demo */
 .demo{
-    margin-top: 2rem;
-    margin-bottom: 3rem;
-}
-
-.intro-columns{
-    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-bottom: 50px;
 }
 
 .intro-col{
     width: 100%;
     background-color: #b5ddff;
-    text-align: center;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 20px;
 }
+/* fine sezione demo */
 
-/* TABLET */
+/* inizio strategic */
+
+.strategic{
+    padding-top: 30px;
+    padding-bottom: 50px;  
+}
+
+.strategic-col{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.strategic-col:last-child{
+    background-color: white;
+    border-radius: 50px;
+    padding: 20px;
+    
+}
+/* fine strategic */
+
+/* testimonials */
+.testimonials{
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.testimonial{
+    width: 100%;
+    background-color: #9792e4;
+    padding: 10px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.testimonial:first-child{
+    background-color: white;
+}
+/* fine testimonials */
+
+/* inizio benefit */
+.benefits{
+    padding-top: 35px;
+    padding-bottom: 20px;  
+}
+
+.benefits h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 33px;
+    color: white;
+}
+
+.benefit{
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 30px;
+    margin-bottom: 25px;
+}
+/* fine benefit */
+
+/* inizio About Us */
+.about-us{
+    padding-top: 35px;
+    padding-bottom: 20px;  
+}
+
+.about-us h2{
+    margin-bottom: 20px;
+    color: #9792e4;
+    font-size: 40px;
+}
+
+.us{
+    width: 100%;
+}
+
+.us p{
+    margin-bottom: 40px;
+}
+
+
+/*----------------------------------------
+                    TABLET 
+------------------------------------------*/
 @media screen and (min-width:768px){
                 /* MAIN */
     /* inizio demo */
@@ -81,20 +169,40 @@ nav{
        
     }
 
-    .intro-col{
-        
+    .intro-col{ 
         width: calc( 100% / 3 - 2rem);
         padding: 0 1rem;
         margin-left: 1rem;
         margin-right: 1rem;
     }
-
     /* fine demo */
+
+    /* inizio benefits */
+    .cont-benefit{
+        justify-content: space-between;
+    }
+    .benefit{
+        width:calc(100% / 2 - 10px) ;
+    }
+    /* fine benefit */
+
+    /* inizio About us */
+    .cont-us{
+        justify-content: center;
+    }
+
+    .us{
+        width: 40%;
+        margin-right: 1rem;
+    }
 }
 
 
 
-/* DEKSTOP */
+
+/*----------------------------------------
+                    DEKSTOP 
+------------------------------------------*/
 @media screen and (min-width:992px) {
     /* HEADER */
     
@@ -108,4 +216,28 @@ nav{
     li{
         padding: 10px;
     }
+
+    /* MAIN */
+
+    /* strategic */
+    .strategic-col{
+        width: 40%;
+        margin-right: 1rem;
+    }
+
+    .strategic-columns{
+        justify-content:center ;
+        align-items: flex-end;   
+    }
+    /* fine strategic */
+
+    /* inizio benefits */
+    .cont-benefit{
+        justify-content: space-between;
+    }
+    .benefit{
+        width:calc(100% / 3 - 10px) ;
+    }
+    /* fine benefit */
+    
 }
