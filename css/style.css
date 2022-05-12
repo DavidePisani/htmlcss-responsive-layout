@@ -49,8 +49,8 @@ nav{
 
 /* MAIN */
 .demo{
-    padding-top: 2rem;
-    /* padding-bottom: 2rem; */
+    margin-top: 2rem;
+    margin-bottom: 3rem;
 }
 
 .intro-columns{
@@ -60,35 +60,37 @@ nav{
 .intro-col{
     width: 100%;
     background-color: #b5ddff;
-    border: 1px solid black;
-    margin-bottom: 10px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 /* TABLET */
 @media screen and (min-width:768px){
-    /* MAIN */
+                /* MAIN */
+    /* inizio demo */
     .intro-columns{
         margin-left: -1rem;
         margin-right: -1rem;
+        justify-content: space-between;
     }
 
     .intro-col:first-child{
-        width: calc( (100% / 3 * 2) - 1rem);
+        width: calc( (100% / 3 * 2) - 2rem);
        
     }
 
     .intro-col{
         
-        width: calc( 100% / 3 - 1rem);
+        width: calc( 100% / 3 - 2rem);
         padding: 0 1rem;
         margin-left: 1rem;
+        margin-right: 1rem;
     }
 
+    /* fine demo */
 }
-
-
-
-
 
 
 
