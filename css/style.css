@@ -173,14 +173,63 @@ nav{
 .testimonial{
     width: 100%;
     background-color: #9792e4;
+    text-align: center;
     padding: 10px;
     border-radius: 30px;
     margin-bottom: 20px;
+    justify-content: center;
 }
 
 .testimonial:first-child{
     background-color: white;
+    text-align: center;
 }
+.testimonial:first-child h4{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #353535;
+    font-size: 14px;
+}
+
+.testimonial:first-child h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #9792e4;
+    font-size: 30px;
+}
+
+.testimonial:first-child p{
+    line-height: 30px;
+}
+
+.sqere-img-box{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+
+.sqere-img-box img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.desc-testimonial{
+    margin-top: 15px;
+    color: white;
+}
+.desc-testimonial h4{
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+
+.desc-testimonial span{
+    line-height: middle;
+    font-size: 50px ;
+}
+
 /* fine testimonials */
 
 /* inizio benefit */
@@ -199,10 +248,39 @@ nav{
 .benefit{
     width: 100%;
     background-color: white;
-    padding: 10px;
+    color: #9792e4;
+    padding: 30px;
     border-radius: 30px;
     margin-bottom: 25px;
 }
+
+.benefit h3{
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.benefit h4{
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.benefit p{
+    color: #919191;
+}
+
+.benefit .btn-small{
+    padding: 10px 50px;
+    background-color: #9792e4;
+}
+
+.benefit a{
+    display: inline-block;
+    margin-top: 20px;
+}
+
+
+
+
 /* fine benefit */
 
 /* inizio About Us */
@@ -224,6 +302,26 @@ nav{
 .us p{
     margin-bottom: 40px;
 }
+
+.us h3{
+    margin-top: 15px;
+    font-size: 25px;
+    color:#9792e4; 
+}
+
+.us .btn-small{
+    background-color: #9792e4;
+}
+
+.us a{
+   padding: 5px;
+   margin-top: 15px;
+   display: inline-block;
+}
+
+.us i{
+    padding: 5px;
+}
 /* fine About Us */
 
 /* inizio Get-start */
@@ -233,11 +331,54 @@ nav{
 }
 
 .start{
-    width: 100%;
+    max-width: 410px;
+    margin: 0 auto;
     padding: 10px;
     text-align: center;
-    margin-bottom: 25px;
 }
+
+.start h4{
+    color: #c3c0ef;
+    font-size: 20px;
+}
+
+.start h3{
+    color: white;
+    font-size: 30px;
+}
+
+.start h2{
+    color: #fdc15f;
+    font-size: 80px;
+}
+
+.start h5{
+    color: #d6d4f4;
+    font-size: 15px ;
+}
+
+.btn-large{
+    background-color: white;
+    color: #9792e4;
+    padding: 15px 90px;
+    border-radius: 30px;
+}
+
+.start a {
+    display:inline-block;
+    margin-top: 20px;
+}
+
+.start p{
+    font-size: 12px;
+}
+
+.start i{
+    font-size: 5px;
+    text-align: center;
+}
+
+
 /* fine Get-start */
 /* FINE MAIN */
 
@@ -299,6 +440,19 @@ footer{
     }
     /* fine demo */
 
+    /* inizio testimonials */
+
+    .testimonial{
+        justify-content: space-between;
+        align-items: center;
+        text-align: start;
+    }
+
+
+    .desc-testimonial{
+        width: 70%;
+    }
+
     /* inizio benefits */
     .cont-benefit{
         justify-content: space-between;
@@ -318,6 +472,10 @@ footer{
     .us{
         width: 40%;
         margin-right: 1rem;
+    }
+
+    .us:last-child{
+        width: 30%;
     }
     /* FINE MAIN */
 }
