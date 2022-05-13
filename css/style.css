@@ -295,6 +295,7 @@ nav{
 
 .us{
     width: 100%;
+    position: relative;
 }
 
 .us p{
@@ -319,6 +320,16 @@ nav{
 
 .us i{
     padding: 5px;
+}
+
+.quote-left {
+    position: absolute;
+    left: 140px;
+    bottom: 140px;
+    font-size: 139px;
+    color: #9792e4;
+    z-index: 2;
+    display: block;   
 }
 /* fine About Us */
 
