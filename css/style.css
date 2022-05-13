@@ -226,7 +226,8 @@ nav{
 
 
 .desc-testimonial span{
-    line-height: middle;
+    line-height: 0;
+    vertical-align: text-bottom;
     font-size: 50px ;
 }
 
@@ -278,9 +279,6 @@ nav{
     margin-top: 20px;
 }
 
-
-
-
 /* fine benefit */
 
 /* inizio About Us */
@@ -324,7 +322,7 @@ nav{
 }
 /* fine About Us */
 
-/* inizio Get-start */
+/* inizio GET START */
 .get-start{
     padding-top: 35px;
     padding-bottom: 20px;  
@@ -415,9 +413,9 @@ footer{
     color: #9792e4;
 }
 
-/*----------------------------------------
-                    TABLET 
-------------------------------------------*/
+/*----------------------------------------------------------------------
+                                TABLET 
+---------------------------------------------------------------------*/
 @media screen and (min-width:768px){
                 /* MAIN */
     /* inizio demo */
@@ -483,9 +481,9 @@ footer{
 
 
 
-/*----------------------------------------
-                    DEKSTOP 
-------------------------------------------*/
+/*--------------------------------------------------------------------------
+                                    DEKSTOP 
+----------------------------------------------------------------------------*/
 @media screen and (min-width:992px) {
     /* HEADER */
     
