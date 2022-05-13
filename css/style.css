@@ -295,7 +295,6 @@ nav{
 
 .us{
     width: 100%;
-    position: relative;
 }
 
 .us p{
@@ -321,15 +320,21 @@ nav{
 .us i{
     padding: 5px;
 }
+.about-img-box {
+    width: 200px;
+    position: relative;
+    border-radius: 50%;
+ }
 
+ .person-about{
+     border-radius: 50%;
+ }
 .quote-left {
     position: absolute;
-    left: 140px;
-    bottom: 140px;
-    font-size: 139px;
+    right: 0;
+    top: -47px;
+    font-size: 200px;
     color: #9792e4;
-    z-index: 2;
-    display: block;   
 }
 /* fine About Us */
 
